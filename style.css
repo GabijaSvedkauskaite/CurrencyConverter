@@ -34,6 +34,7 @@ ul.currencies {
     height: calc(100vh - 40px - 100px - 40px - 58px);
     background-color: #011c12;
     padding: 0 1.5rem 1rem 1.5rem;
+    overflow-y: auto;
 }
 ul.currencies li {
     background-color: #012618;
@@ -96,6 +97,14 @@ ul.currencies li .close {
 }
 ul.currencies li .close:hover {
     color: #fff;
+}
+/* Scrollbar */
+ul.currencies::-webkit-scrollbar {
+    width: 5px;
+}
+ul.currencies::-webkit-scrollbar-thumb {
+    background-color: #324a3c;
+    border-bottom: 1rem solid #011c12;;
 }
 .add-currency-btn {
     background-color: #b37814;
